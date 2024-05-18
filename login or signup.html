@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login_css.css">
+  <title>Login/Sign Up Page</title>
+</head>
+<body>
+
+    <header class="panel-nav">
+        <nav class="nav-bar">
+            <img src="logo.png" height="100px"/>
+            
+            <a href="index.html">HOME</a>
+            <!--<a href="#">CATEGORIES</a>-->
+            <div class="dropdown">
+                <button class="dropbtn">CATEGORIES</button>
+                <div class="dropdown-content">
+                    <a href="mens_wear.php">Men's Wear</a>
+                    <a href="womens_wear.php">Women's Wear</a>
+                    <a href="girls_wear.php">Girls's Wear</a>
+                    <a href="boys_wear.php">Boys's Wear</a>
+                    <a href="womens_jwellery.php">Women's Jwellery</a>
+                    <a href="mens_jwellery.php">Men's Jwellery</a>
+                    <a href="mens_watch.php">Men's Watch</a>
+                    <a href="womens_watch.php">Women's Watch</a>
+                    <a href="mens_footwear.php">Men's Foot Wear</a>
+                    <a href="womens_footwear.php">Women's Foot Wear</a>
+                    <a href="sunglasses.php">Sunglasses</a>
+                    <a href="mens_wallets_and_bags.php">Men's Wallets and Bags</a>
+                    <a href="womens_wallets_and_bags.php">Women's Wallets and Bags</a>
+                </div>
+            </div>
+            <a href="login or signup.html">LOGIN</a>
+            <a href="account.php">ACCOUNT</a>
+            <a href="about.html">ABOUT</a>
+            <a href="shopping_cart.php"><img src="shopping-cart-fill.png"/></a>
+        </nav>
+    </header>
+    <main>
+        <div class="panel-container">
+            <div class="panel">
+                <div class="tab">
+                    <button class="tablinks active" onclick="openTab(event, 'login')">Login</button>
+                    <button class="tablinks" onclick="openTab(event, 'signup')">Sign Up</button>
+                </div>
+
+                <div id="login" class="tabcontent">
+                    <h3>Login Form</h3>
+                    <form action="login_page.php" method="GET">
+                        <input type="text" id="username_log" name="username_log" placeholder="Username"><br><br>
+                        <input type="password" id="password_log" name="password_log" placeholder="Password"><br><br>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+
+                <div id="signup" class="tabcontent" style="display: none;">
+                    <h3>Sign Up Form</h3>
+                    <form action="signup_page.php" method="POST">
+                        <input type="text" id="username" name="username" placeholder="Username"><br><br>
+                        <input type="email" id="email" name="email" placeholder="Email"><br><br>
+                        <input type="password" id="password" name="password" placeholder="Password"><br><br>
+                        <input type="text" id="fullname" name="fullname" placeholder="Full Name"><br><br>
+                        <textarea type="text" id="address" name="address" placeholder="Address"></textarea><br><br>
+                        <input type="text" id="phone" name="phone" placeholder="Phone No."><br><br>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script>
+       function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

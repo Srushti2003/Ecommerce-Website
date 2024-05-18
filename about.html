@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>About</title>
+
+  <style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*@font-face {
+    font-family: "My Custom Font";
+    src: url(http://www.example.org/mycustomfont.ttf) format("truetype");
+}
+p.customfont { 
+    font-family: "My Custom Font", Verdana, Tahoma;
+}*/
+
+
+@font-face {
+    font-family: "customfont";
+    src: url(https://fonts.googleapis.com/css2?family=Lobster&display=swap);
+}
+  
+.panel-nav {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(229, 101, 197, 0.1);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+  
+header {
+    padding: 10px 20px;
+}
+  
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.nav-bar img {
+    margin-right: 10px;
+}
+  
+.nav-bar a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+  
+.nav-bar a:hover {
+    background-color: #f0f0f0;
+}
+  
+.search-container {
+    display: flex;
+    align-items: center;
+}
+  
+.search-container input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+  
+.search-container button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+  
+.search-container button img {
+    vertical-align: middle;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: #f0f0f0;
+}
+
+main {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about, .team, .contact {
+    margin-bottom: 2rem;
+}
+
+.about h1, .team h2, .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    margin: 1rem;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.team-member h3 {
+    margin: 0.5rem 0 0.2rem;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li {
+    margin: 0.5rem 0;
+}
+
+  </style>
+  
+</head>
+<body>
+
+    <header class="panel-nav">
+        <nav class="nav-bar">
+            <img src="logo.png" height="100px"/>
+            
+            <a href="index.html">HOME</a>
+            <!--<a href="#">CATEGORIES</a>-->
+            <div class="dropdown">
+                <button class="dropbtn">CATEGORIES</button>
+                <div class="dropdown-content">
+                    <a href="mens_wear.php">Men's Wear</a>
+                    <a href="womens_wear.php">Women's Wear</a>
+                    <a href="girls_wear.php">Girls's Wear</a>
+                    <a href="boys_wear.php">Boys's Wear</a>
+                    <a href="womens_jwellery.php">Women's Jwellery</a>
+                    <a href="mens_jwellery.php">Men's Jwellery</a>
+                    <a href="mens_watch.php">Men's Watch</a>
+                    <a href="womens_watch.php">Women's Watch</a>
+                    <a href="mens_footwear.php">Men's Foot Wear</a>
+                    <a href="womens_footwear.php">Women's Foot Wear</a>
+                    <a href="sunglasses.php">Sunglasses</a>
+                    <a href="mens_wallets_and_bags.php">Men's Wallets and Bags</a>
+                    <a href="womens_wallets_and_bags.php">Women's Wallets and Bags</a>
+                </div>
+            </div>
+            <a href="login or signup.html">LOGIN</a>
+            <a href="account.php">ACCOUNT</a>
+            <a href="about.html">ABOUT</a>
+            <a href="shopping_cart.php"><img src="shopping-cart-fill.png"/></a>
+        </nav>
+    </header>
+    <main>
+       
+        <section class="about">
+            <h1>About Urbz</h1>
+            <p>Welcome to Urbz, your number one source for all things fashion. We're dedicated to giving you the very best of clothing, with a focus on quality, customer service, and uniqueness.</p>
+            <p>Founded in 2024, Urbz has come a long way from its beginnings. When we first started out, our passion for fashion drove us to start our own business.</p>
+            <p>We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p>
+            <p><strong>Sincerely,</strong><br>The Urbz Team</p>
+        </section>
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <img src="member1.jpg" alt="Team Member 1">
+                <h3>Jane Doe</h3>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="member2.jpg" alt="Team Member 2">
+                <h3>John Smith</h3>
+                <p>Head of Design</p>
+            </div>
+            <div class="team-member">
+                <img src="member3.jpg" alt="Team Member 3">
+                <h3>Emily Johnson</h3>
+                <p>Marketing Director</p>
+            </div>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Whether you have a question about our products, need assistance, or just want to provide feedback, feel free to reach out to us.</p>
+            <ul>
+                <li><strong>Email:</strong> support@urbz.com</li>
+                <li><strong>Phone:</strong> +1 234 567 890</li>
+                <li><strong>Address:</strong> 123 Fashion Ave, New York, NY 10001, USA</li>
+            </ul>
+        </section>
+    </main>
+    <footer></footer>
+    
+    <script></script>
+</body>
+</html>
